@@ -1,0 +1,20 @@
+# Grid07 Cognitive Engine — Dependencies
+# Install: pip install -r requirements.txt
+
+# LLM & Orchestration
+langchain>=0.3.0
+langchain-groq>=0.2.0
+langchain-core>=0.3.0
+langgraph>=0.2.0
+
+# Vector Database
+chromadb>=0.5.0
+
+# Structured Output
+pydantic>=2.0.0
+
+# Beautiful Console Output
+rich>=13.0.0
+
+# Environment Variables
+python-dotenv>=1.0.0
