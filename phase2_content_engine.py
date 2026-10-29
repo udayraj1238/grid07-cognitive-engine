@@ -104,6 +104,7 @@ def decide_search_node(state: ContentEngineState) -> dict:
         model=GROQ_MODEL,
         temperature=0.7,  # Slightly creative for topic selection
         api_key=GROQ_API_KEY,
+        reasoning_effort="low",
     )
     structured_llm = llm.with_structured_output(SearchDecision)
 
@@ -147,6 +148,7 @@ def draft_post_node(state: ContentEngineState) -> dict:
         model=GROQ_MODEL,
         temperature=0.9,  # Creative for post generation
         api_key=GROQ_API_KEY,
+        reasoning_effort="low",
         max_tokens=GROQ_MAX_TOKENS,
     )
     structured_llm = llm.with_structured_output(BotPost)

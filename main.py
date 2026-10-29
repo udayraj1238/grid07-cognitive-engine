@@ -36,7 +36,7 @@ def print_banner():
     console.print(Panel(
         f"[bold cyan]{banner}[/bold cyan]\n"
         f"  [dim]Vector Routing • LangGraph Orchestration • RAG Combat Engine[/dim]\n"
-        f"  [dim]Built with LangChain, ChromaDB, and Groq (Llama 3.3 70B)[/dim]",
+        f"  [dim]Built with LangChain, ChromaDB, and Groq (gpt-oss-120b)[/dim]",
         border_style="cyan",
         box=box.DOUBLE_EDGE,
         padding=(0, 2),

@@ -159,6 +159,7 @@ def generate_defense_reply(
         model=GROQ_MODEL,
         temperature=0.8,  # Some creativity for argumentative flair
         api_key=GROQ_API_KEY,
+        reasoning_effort="low",
         max_tokens=512,
     )
 

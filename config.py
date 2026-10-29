@@ -15,7 +15,8 @@ load_dotenv()
 # LLM Configuration
 # ─────────────────────────────────────────────
 GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
-GROQ_MODEL = "llama-3.3-70b-versatile"       # Best free-tier model for tool-calling
+# llama-3.3-70b-versatile was retired by Groq on 2026-08-16; gpt-oss-120b supports tool calling.
+GROQ_MODEL = os.getenv("GROQ_MODEL", "openai/gpt-oss-120b")
 GROQ_TEMPERATURE = 0                           # Deterministic output for structured data
 GROQ_MAX_TOKENS = 1024                         # Sufficient for 280-char posts + reasoning
 
